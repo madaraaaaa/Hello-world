@@ -1,4 +1,4 @@
-# Hello-world
+#  data visualization
 Data visualization is an vital skill this is utilized in many parts of the statistics analysis method.
 
 Exploratory data visualization commonly happens for the duration of and after the facts wrangling process, and is the main technique that you'll use to recognize the patterns and relationships present in your records. This know-how will help you technique any statistical analyses and will assist you construct conclusions and findings. This process can also light up additional data cleaning duties to be performed.
