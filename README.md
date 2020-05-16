@@ -1,35 +1,22 @@
 #  data visualization
-Data visualization is an vital skill this is utilized in many parts of the statistics analysis method.
+Dataset
+Bay Wheels (previously referred to as Ford GoBike) is a regional public motorcycle sharing gadget inside the San Francisco Bay Area, California. Bay Wheels is the first regional and large-scale bicycle sharing gadget deployed in California and on the West Coast of america with nearly 500,000 rides for the reason that launch in 2017 and had about 10,000 annual subscribers as of January 2018. The dataset used for this exploratory analysis consists of monthly individual trip statistics from January 2018 to December 2018 in CSV layout protecting the greater San Francisco Bay area, also to be had here.
 
-Exploratory data visualization commonly happens for the duration of and after the facts wrangling process, and is the main technique that you'll use to recognize the patterns and relationships present in your records. This know-how will help you technique any statistical analyses and will assist you construct conclusions and findings. This process can also light up additional data cleaning duties to be performed.
+Data wrangling process:
+fix more than one fields that aren't in the suitable dtype, i.E. Start_time, end_time need to be datetime type, user_type and member_gender must be categorical records type, etc
+upload new columns for journey period in minute, trip begin date in yyyy-mm-dd layout, journey begin hour of the day, day of week and month
+upload a brand new column calculating riders' age from 'member_birth_year'
+clear out outlier a long time from visual exam of the member age distribution and statistical percentile
+cast 'member_birth_year' and 'member_age' to integer as opposed to flow type
+cast 'start_dayofweek' to class dtype
+cast 'start_month' to class dtype for smooth plotting
+clear out outlier trip statistics where the period was very long
+Summary of Findings
+The quantity of trips peaked around 8-9am and 17-18pm throughout a day, there had been more journeys on paintings days (Mon-Fri) as compared to weekends. Summar time changed into the maximum popular season of a year, likely because of the weather. The riding trips tend to be shorter on Monday through Friday as compared to weekends. It indicates a quite stable and efficient usage of the motorcycle sharing system on regular work days, even as extra informal flexible use on weekends.
 
-Explanatory records visualization techniques are used after producing your findings, and are used to assist talk your consequences to others. Understanding design issues will make sure that your message is apparent and effective. In addition to being an excellent manufacturer of visualizations, going thru this project will additionally assist you be a terrific consumer of visualizations which might be offered to you through others.
+Most riders have been male subscribers who did not use bike percentage for all journeys. Most members were around 25 to 40 years old, because the age receives older, motorcycle utilization dropped significantly. Though now not a huge difference, male riders tend to have shorter trips as compared to lady users, indicated by using each a smaller median and shorter IQR. Riders who rented the bikes Monday through Friday are slightly older than folks who journey on weekends, which dietary supplements the paintings trip usage that become determined from some of the univariable exploration plots.
 
+There are lots more subscriber usage than clients overall. The riding dependancy/sample varies plenty between subscribers and clients. Subscribers use the motorbike sharing machine for work commnute thus most journeys had been on work days (Mon-Fri) and specially all through rush hours (while going to work within the morning and getting off work within the afternoon), whereas customers generally tend to journey for fun inside the afternoon or early evenings over weekends. Subscriber usage peaks out on standard rush hours when people go to work inside the morning and getting off paintings inside the afternoon, which bolstered their utilization motive and goal of riding. Similar pattern changed into now not located among clients who generally tend to trip maximum inside the afternoon or early nighttime for a different motive than the subscribers.
 
-Project Details
-Dataset: Ford GoBike
-Explore the facts: Feel free to explore the jupyter notebook where the dataset is visually, and programatically explored.
-Document the story: organized findings carry a story to offer to an audience.
-Communicate the findings - a slide deck with my findings is ready for a curious audience.
-Project Findings
-This project is a win - win situation where a large quantity of humans can advantage from this program:
-
-Environmentally friendly, budget friendly, and lifetsyle friendly.
-Subscribers (i.E. each day commuters) advantage from a health commuting choice.
-Customers (i.E. travelers, students, etc.) have a sustainable, but flexible alternative for journeying the city.
-Affordable and handy transportation for the human beings of all socioeconomic classes.
-Renting a motorbike from theFord GoBike System is a fantastic (wholesome and environmentally friendly) way of moving around inside the city, each for leisure and work.
-There are two varieties of customers the use of the device: Subscribers and Customers. Subscribers are primarily daily commuters, having quick journeys to and from work, who lease a motorcycle on weekdays at 8-9am and 5-6pm. Customers are generally tourists or occassional riders who use the device especially on weekends to explore the Bay Area. Age is likewise a aspect inside consumer type. Subscribers who fall inside the age institution between 26-35 years vintage are the most commonplace age institution to apply the motorbike sharing machine. The 26-35 years vintage also lead the spike which happens throughout all age groups in October. Subscribers who fall within the 36-forty five year old age group are the following most common age organization to apply the motorcycle sharing machine, and comply with a similar trend on the 26-35 yr olds.
-
-Ford GoBike Picture
-
-Files
-readme.Md - This Markdown report includes sections which you should fill out as you pick out your dataset, whole your exploration, and plan your explanatory analysis.
-
-Exploration_template.Ipynb - This Jupyter Notebook consists of segment templates to help you arrange your exploration, starting from loading inside the statistics, working thru univariate visualizations, and ending with bivariate and multivariate exploration.
-
-Slide_deck_template.Ipynb - This Jupyter Notebook contains starter cells to help you prepare your slide deck deliverable. These cells offer an example of ways the slide deck have to be organized, along with pre-set slideshow settings.
-
-To view the slide deck, you will need to use the [removed]all one line): jupyter nbconvert Example_Project_Diamonds_Part2.Ipynb --to slides --publish serve --template output_toggle
-
-output_toggle.Tpl - This template record may be used with nbconvert to export your slide deck. This adds extra functionality to the slide deck via hiding the code to start, simplest making it seen if the reader clicks on the output (which should commonly be visualizations within the case of this venture).
+Key Insights for Presentation
+Different utilization pattern/habit between the two form of riders are seen from the exploration. Subscribers use the machine closely on work days i.E. Monday via Friday whereas customers journey a lot on weekends, specially within the afternoon. Many journeys focused round 8-9am and 17-18pm on work days for subscribers, yet customers tend to use extra within the past due afternoon round 17pm Monday to Friday. The efficient/short length of usage for subscribers corresponds to their high awareness on rush hours Monday through Friday, indicating the use is by and large for paintings travel. The more enjoyable and flexible pattern of purchaser use indicates that they may be taking gain of the motorcycle sharing machine pretty differently from the subscribers, heavily over weekends and in the afternoon, for city excursion or entertainment purpose probably.
